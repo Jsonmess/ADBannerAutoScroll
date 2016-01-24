@@ -14,6 +14,7 @@
 		297AE1F71C5509DB0001B672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297AE1F61C5509DB0001B672 /* Assets.xcassets */; };
 		297AE1FA1C5509DB0001B672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297AE1F81C5509DB0001B672 /* LaunchScreen.storyboard */; };
 		297AE2051C5509DB0001B672 /* ADBannerScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 297AE2041C5509DB0001B672 /* ADBannerScrollTests.m */; };
+		297AE2121C550AA50001B672 /* ADBannerAutoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297AE2111C550AA50001B672 /* ADBannerAutoPlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		297AE2001C5509DB0001B672 /* ADBannerScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADBannerScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		297AE2041C5509DB0001B672 /* ADBannerScrollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADBannerScrollTests.m; sourceTree = "<group>"; };
 		297AE2061C5509DB0001B672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297AE2101C550AA50001B672 /* ADBannerAutoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBannerAutoPlayView.h; sourceTree = "<group>"; };
+		297AE2111C550AA50001B672 /* ADBannerAutoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADBannerAutoPlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		297AE1E91C5509DB0001B672 /* ADBannerScroll */ = {
 			isa = PBXGroup;
 			children = (
+				297AE20F1C550A310001B672 /* ADBannerScroll */,
 				297AE1ED1C5509DB0001B672 /* AppDelegate.h */,
 				297AE1EE1C5509DB0001B672 /* AppDelegate.m */,
 				297AE1F01C5509DB0001B672 /* ViewController.h */,
@@ -109,6 +113,15 @@
 				297AE2061C5509DB0001B672 /* Info.plist */,
 			);
 			path = ADBannerScrollTests;
+			sourceTree = "<group>";
+		};
+		297AE20F1C550A310001B672 /* ADBannerScroll */ = {
+			isa = PBXGroup;
+			children = (
+				297AE2101C550AA50001B672 /* ADBannerAutoPlayView.h */,
+				297AE2111C550AA50001B672 /* ADBannerAutoPlayView.m */,
+			);
+			path = ADBannerScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +226,7 @@
 			files = (
 				297AE1F21C5509DB0001B672 /* ViewController.m in Sources */,
 				297AE1EF1C5509DB0001B672 /* AppDelegate.m in Sources */,
+				297AE2121C550AA50001B672 /* ADBannerAutoPlayView.m in Sources */,
 				297AE1EC1C5509DB0001B672 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
