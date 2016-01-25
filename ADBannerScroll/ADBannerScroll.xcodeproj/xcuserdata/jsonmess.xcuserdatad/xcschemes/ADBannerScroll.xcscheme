@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "297AE1E61C5509DB0001B672"
+               BlueprintIdentifier = "297D2AB31C5665AF00CC6A6F"
                BuildableName = "ADBannerScroll.app"
                BlueprintName = "ADBannerScroll"
                ReferencedContainer = "container:ADBannerScroll.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "297AE1FF1C5509DB0001B672"
+               BlueprintIdentifier = "297D2ACC1C5665AF00CC6A6F"
                BuildableName = "ADBannerScrollTests.xctest"
                BlueprintName = "ADBannerScrollTests"
                ReferencedContainer = "container:ADBannerScroll.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "297AE1E61C5509DB0001B672"
+            BlueprintIdentifier = "297D2AB31C5665AF00CC6A6F"
             BuildableName = "ADBannerScroll.app"
             BlueprintName = "ADBannerScroll"
             ReferencedContainer = "container:ADBannerScroll.xcodeproj">
@@ -65,7 +65,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "297AE1E61C5509DB0001B672"
+            BlueprintIdentifier = "297D2AB31C5665AF00CC6A6F"
             BuildableName = "ADBannerScroll.app"
             BlueprintName = "ADBannerScroll"
             ReferencedContainer = "container:ADBannerScroll.xcodeproj">
@@ -84,7 +84,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "297AE1E61C5509DB0001B672"
+            BlueprintIdentifier = "297D2AB31C5665AF00CC6A6F"
             BuildableName = "ADBannerScroll.app"
             BlueprintName = "ADBannerScroll"
             ReferencedContainer = "container:ADBannerScroll.xcodeproj">

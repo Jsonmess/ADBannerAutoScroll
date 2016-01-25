@@ -2,7 +2,7 @@
 //  main.m
 //  ADBannerScroll
 //
-//  Created by jsonmess on 16/1/24.
+//  Created by jsonmess on 16/1/25.
 //  Copyright © 2016年 jsonmess. All rights reserved.
 //
 
