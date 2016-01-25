@@ -26,7 +26,7 @@
 
 -(NSArray *)ADGetBannerSourceBannerAutoPlayView:(ADBannerAutoPlayView *)bannerView
 {
-    return @[@"1.jpg",@"2.jpg"];
+    return @[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg"];
 }
 
 -(BannerSourceType)bannerSourceOrigin
