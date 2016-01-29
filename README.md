@@ -9,10 +9,8 @@
 
 3.添加自动展示banner 滚动方向展示 （左/右）;
 
-screen1：
 ![Aaron Swartz](https://raw.githubusercontent.com/Jsonmess/ADBannerAutoScroll/master/screen1.png)
 
-screen2：
 ![Aaron Swartz](https://raw.githubusercontent.com/Jsonmess/ADBannerAutoScroll/master/screen2.png)
 
 
