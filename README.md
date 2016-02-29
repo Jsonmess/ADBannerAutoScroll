@@ -1,6 +1,10 @@
 # ADBannerAutoScroll
 用于展示Banner广告，实现自动轮播，无限循环滚动功能.
 
+2016.2.29:
+
+增加组件，点击事件回调（回调Block 和 Delegate 任选一）
+
 新增:
 
 1.支持本地和在线banenr图片的展示（在线url 使用SDWebimage 下载);
