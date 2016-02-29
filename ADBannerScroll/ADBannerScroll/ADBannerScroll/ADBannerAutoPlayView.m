@@ -133,10 +133,36 @@ static NSString *reUseStr = @"bannerReUseStr";
 
     bannerViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:reUseStr
                                                                             forIndexPath:indexPath];
-    
-    NSString * tmpImageUrl = self.mBannerDataSource[indexPath.row];
-    [cell setDataOfBanner:tmpImageUrl isFromLocal:self.isBannerFromLocal];
+   
+    NSInteger tmpIndex = indexPath.row;
+    @try
+    {
+       if (tmpIndex >= self.mBannerDataSource.count)
+       {
+           NSException *arrayOutRangeError = [NSException exceptionWithName:@"OutOfArrayCount" reason:@"DataSource越界" userInfo:nil];
+           @throw arrayOutRangeError;
+       }
+        NSString * tmpImageUrl = self.mBannerDataSource[tmpIndex];
+        [cell setDataOfBanner:tmpImageUrl isFromLocal:self.isBannerFromLocal];
+    }
+    @catch (NSException *exception)
+    {
+       //数据源出现越界,暂不处理。
+        
+    }
     return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.bannerDelegate respondsToSelector:@selector(clickBannerEvent:bannerIndex:)])
+    {
+        [self.bannerDelegate clickBannerEvent:self bannerIndex:indexPath];
+    }
+    else if(self.clickBlock)
+    {
+        self.clickBlock(indexPath);
+    }
 }
 
 #pragma mark ---- ScrollViewDelegate
@@ -257,6 +283,5 @@ static NSString *reUseStr = @"bannerReUseStr";
         [self.mCollectionView setContentOffset:CGPointMake(contenOffsetX, 0) animated:NO];
     }
 }
-
 
 @end

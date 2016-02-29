@@ -21,6 +21,10 @@
                                      initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 140)];
     [self.view addSubview:banner];
     banner.bannerDelegate = self;
+    banner.clickBlock = ^(NSIndexPath * indexPath)
+    {
+        NSLog(@"User clicked theBanner,Index is %ld",indexPath.row);
+    };
     // Do any additional setup after loading the view, typically from a nib.
 }
 

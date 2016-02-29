@@ -33,6 +33,11 @@ typedef NS_ENUM(NSInteger) {
     
 }BannerScrollDirection;
 
+/**
+ *  点击Banner 
+ *  回调Block 和 实现Delegate中clickBannerEvent 等价,任选一即可
+ */
+typedef void (^bannerClickHandleBack) (NSIndexPath *indexPath);
 
 /// Banner轮播展示
 @class ADBannerAutoPlayView;
@@ -60,7 +65,10 @@ typedef NS_ENUM(NSInteger) {
  */
 - (BannerScrollDirection)getBannerScrollDirction;
 
-
+/**
+ *  banner点击
+ */
+- (void)clickBannerEvent:(ADBannerAutoPlayView*)bannerView bannerIndex:(NSIndexPath*)indexPath;
 @end
 
 
@@ -70,5 +78,7 @@ typedef NS_ENUM(NSInteger) {
 @property (nonatomic,weak) id<ADBannerAutoPlayViewDelegate>bannerDelegate;
 
 @property (nonatomic) BannerScrollDirection scrollDirection;
+
+@property (nonatomic,copy) bannerClickHandleBack clickBlock;
 
 @end
