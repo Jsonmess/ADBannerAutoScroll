@@ -44,7 +44,7 @@
 }
 -(BannerScrollDirection)getBannerScrollDirction
 {
-    return bannerScrollLeft;
+    return bannerScrollRight;
 }
 
 - (void)didReceiveMemoryWarning {

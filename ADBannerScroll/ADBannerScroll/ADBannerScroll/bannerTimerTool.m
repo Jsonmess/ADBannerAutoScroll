@@ -73,8 +73,11 @@
 
 -(void)bannerAutoPlayStop
 {
-    [self.mTimer invalidate];
-    self.mTimer = nil;
+    if(self.mTimer)
+    {
+        [self.mTimer invalidate];
+        self.mTimer = nil;
+    }
 }
 
 -(void)bannerAutoPlayPause
