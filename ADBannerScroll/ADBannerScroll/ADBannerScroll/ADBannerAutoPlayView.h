@@ -81,4 +81,5 @@ typedef void (^bannerClickHandleBack) (NSIndexPath *indexPath);
 
 @property (nonatomic,copy) bannerClickHandleBack clickBlock;
 
+
 @end

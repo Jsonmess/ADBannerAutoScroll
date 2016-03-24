@@ -12,6 +12,8 @@
 
 @interface bannerTimerTool()
 
+@property (nonatomic)NSTimeInterval timeInterval;
+
 @property (nonatomic) NSTimer * mTimer;
 
 @end
@@ -54,6 +56,7 @@
 
 -(void)bannerAutoPlayTime:(NSTimeInterval)timeInterval
 {
+    self.timeInterval = timeInterval;
     self.mTimer = nil;
     if (timeInterval > 0)
     {
@@ -66,7 +69,7 @@
 {
     if (!self.mTimer)
     {
-        [self initTimerWithTimeInterval:3.0f];
+        [self initTimerWithTimeInterval:self.timeInterval > 0 ? self.timeInterval : defaultTimeInterval];
     }
     [[NSRunLoop currentRunLoop] addTimer:self.mTimer forMode:NSDefaultRunLoopMode];
 }

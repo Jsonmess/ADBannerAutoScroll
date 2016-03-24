@@ -44,6 +44,8 @@ static NSString *reUseStr = @"bannerReUseStr";
     _bannerDelegate = bannerDelegate;
     [self initViews];
 }
+
+
 - (void)initViews
 {
   
@@ -114,6 +116,7 @@ static NSString *reUseStr = @"bannerReUseStr";
     [self startAutoPlay];
     
 }
+
 
 #pragma mark ---- CollectionViewDelegate
 
