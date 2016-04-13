@@ -82,4 +82,6 @@ typedef void (^bannerClickHandleBack) (NSIndexPath *indexPath);
 @property (nonatomic,copy) bannerClickHandleBack clickBlock;
 
 
+//刷新banner数据
+- (void)reloadBannerSource;
 @end

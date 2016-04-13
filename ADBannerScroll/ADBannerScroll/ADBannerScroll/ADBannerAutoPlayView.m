@@ -28,6 +28,11 @@
  */
 @property (nonatomic) NSMutableArray* mBannerDataSource;
 /**
+ *  上一次的Banner数据
+ */
+@property (nonatomic) NSArray *mOriginDataSource;
+
+/**
  *  banner 数据是否来自本地  默认来自于网络
  */
 @property (nonatomic,assign) BOOL isBannerFromLocal;
@@ -200,7 +205,34 @@ static NSString *reUseStr = @"bannerReUseStr";
 }
 
 #pragma mark ---- other tools
-
+/**
+ * 加载banner数据
+ */
+-(void)loadBannerSource
+{
+  NSArray *sourceArray = [NSArray array];
+    if ([self.bannerDelegate respondsToSelector:@selector(ADGetBannerSourceBannerAutoPlayView:)])
+    {
+        sourceArray = [self.bannerDelegate ADGetBannerSourceBannerAutoPlayView:self];
+    }
+    self.mOriginDataSource = sourceArray;
+    BOOL tmpSourceExist = sourceArray != nil && sourceArray.count > 0;
+    [self.mPageControl setNumberOfPages:sourceArray.count];
+    if ( tmpSourceExist)
+    {
+        [self packageTheDataSourceWithSource:sourceArray];
+    }
+}
+/**
+ * 刷新Banner数据
+ */
+-(void)reloadBannerSource
+{
+    [self.mTimerTool bannerAutoPlayStop];
+    [self loadBannerSource];
+    [self.mCollectionView reloadData];
+    [self startAutoPlay];
+}
 
 -(void)startAutoPlay
 {
